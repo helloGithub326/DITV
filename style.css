@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, p{
+    text-align: center;
+}
+#keybinds{
+    width: 550px;
+    position: relative;
+    margin: auto;
+}
+#version{
+    text-align: right;
+}
+#game{
+    width: 500px;
+    height: 450px;
+    border: 2px solid black;
+    border-color: rgb(73, 73, 73);
+    margin: auto;
+    overflow: hidden;
+}
+@keyframes backdrop{
+    0%   {background-color:rgb(255, 72, 0);}
+    25%  {background-color:rgb(255, 126, 5);}
+    50%  {background-color:rgb(255, 126, 5);}
+    100% {background-color:rgb(255, 72, 0);}
+}
+#main{
+    animation-name: backdrop;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#character{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: 300px;
+    left: 250px;
+    z-index: 1000000;
+}
+#question{
+    font-size: 18px;
+}
+.block{
+    width: 500px;
+    height: 20px;
+    background-color: #403E36;
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
+.hole, .hole1{
+    --bg-color: white;
+    width: 50px;
+    height: 20px;
+    background-color: var(--bg-color);
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 18px
+}
+.holec{
+    --bg-color: white;
+    width: 50px;
+    height: 20px;
+    background-color: var(--bg-color);
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 18px;
+}
+button{
+    margin: 0;
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    background-color: #999797;
+    width: 100px;
+    height: 25px;
+    border-color: #403E36;
+    border-width: 2px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+button:hover{
+    border-color: #999797;
+    background-color: #707070;
+}
