@@ -12,7 +12,7 @@ var lowestElevationEverHeader = document.getElementById("lowest-elevation-ever")
 var interval;
 var both = 0;
 var counter = 0;
-var speed = 0.2;
+var speed = 0.5;
 var increase = 0.000004;
 var move = 2;
 var paused = false;
